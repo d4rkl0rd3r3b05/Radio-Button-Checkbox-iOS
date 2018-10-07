@@ -162,6 +162,10 @@ extension RNQuestionView {
         self.questionLabel.isAccessibilityElement = true
         self.questionLabel.accessibilityTraits = UIAccessibilityTraits.header
         self.questionLabel.accessibilityLabel = (self.currentQuestionType == .multipleChoice ? "Multiple Choice Correct " : "Single  Choice Correct ") + currentQuestion.question
+        self.questionLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+        if #available(iOS 10.0, *) {
+            self.questionLabel.adjustsFontForContentSizeCategory = true
+        }
     }
 }
 
