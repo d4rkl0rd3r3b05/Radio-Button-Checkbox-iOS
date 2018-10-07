@@ -58,22 +58,22 @@ public protocol QuestionSubmissionDelegate: NSObjectProtocol {
     func onSubmission(response: [[Int]])
 }
 
-open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
+public class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var optionsTableView: IntrinsicTableView!
     @IBOutlet weak var nextButton: UIButton!
     
-    var questions: [RNQuestion]?
+    public var questions: [RNQuestion]?
     var currentQuestionIndex = 0
     var currentQuestionType: RNQUestionType = .singleChoice
     weak var delegate: QuestionSubmissionDelegate?
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setUpXib()
     }
     
-    override open func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
@@ -115,7 +115,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         return 1
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let currentQuestion = self.questions?[currentQuestionIndex] {
             //Calculated once for every question to avoid over calculation
             self.currentQuestionType = currentQuestion.type
@@ -135,7 +135,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         return 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RNQuestionOptionCell", for: indexPath) as! RNQuestionOptionCell
         cell.setData(option: self.questions![currentQuestionIndex].options[indexPath.row])
         
