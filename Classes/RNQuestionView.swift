@@ -18,7 +18,7 @@ open class RNQuestion {
     fileprivate var options: [RNOption]
     fileprivate var type: RNQUestionType
     
-    init?(question: String, options: [String], type: RNQUestionType) {
+    public init?(question: String, options: [String], type: RNQUestionType) {
         if question.trimmingCharacters(in: .whitespacesAndNewlines) == "" || options.count == 0 {
             return nil
         }
@@ -58,7 +58,7 @@ public protocol QuestionSubmissionDelegate: NSObjectProtocol {
     func onSubmission(response: [[Int]])
 }
 
-public class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
+open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var optionsTableView: IntrinsicTableView!
     @IBOutlet weak var nextButton: UIButton!
@@ -73,7 +73,7 @@ public class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate 
         setUpXib()
     }
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
     }
     
