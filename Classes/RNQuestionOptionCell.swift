@@ -45,7 +45,7 @@ extension RNQuestionOptionCell {
     func addAccessibility(currentOption: RNOption) {
         //Option Label
         self.optionLabel.isAccessibilityElement = true
-        self.optionLabel.accessibilityTraits = UIAccessibilityTraits.staticText
+        self.optionLabel.accessibilityTraits = UIAccessibilityTraitStaticText
         self.optionLabel.accessibilityLabel = currentOption.option + (currentOption.isSelected ? " Selected" : " Not Selected")
         self.optionLabel.font = UIFont.preferredFont(forTextStyle: .body)
         if #available(iOS 10.0, *) {

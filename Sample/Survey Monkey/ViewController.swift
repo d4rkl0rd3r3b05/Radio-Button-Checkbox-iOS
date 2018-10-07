@@ -30,7 +30,7 @@ extension ViewController {
     func addAccessibility() {
         //Question View
         self.questionView.isAccessibilityElement = true
-        self.questionView.accessibilityTraits = UIAccessibilityTraits.none
+        self.questionView.accessibilityTraits = UIAccessibilityTraitNone
         self.questionView.accessibilityLabel = "Please answer the question"
     }
 }
