@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/*.{swift, xib}"
+  s.source_files  = "Classes", "Classes/*.{swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -107,6 +107,9 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   s.resources = "Resources/*.png"
+  s.resource_bundles = {
+    'Radio_CheckBox_Framework' => ['Classes/*.{xib}']
+  }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

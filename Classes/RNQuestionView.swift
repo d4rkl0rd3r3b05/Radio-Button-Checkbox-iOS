@@ -8,12 +8,12 @@
 
 import UIKit
 
-enum RNQUestionType: Int {
+public enum RNQUestionType: Int {
     case singleChoice = 1
     case multipleChoice = 2
 }
 
-class RNQuestion {
+open class RNQuestion {
     fileprivate var question: String
     fileprivate var options: [RNOption]
     fileprivate var type: RNQUestionType
@@ -54,11 +54,11 @@ class IntrinsicTableView: UITableView {
     
 }
 
-protocol QuestionSubmissionDelegate: NSObjectProtocol {
+public protocol QuestionSubmissionDelegate: NSObjectProtocol {
     func onSubmission(response: [[Int]])
 }
 
-class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
+open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var optionsTableView: IntrinsicTableView!
     @IBOutlet weak var nextButton: UIButton!
@@ -73,11 +73,11 @@ class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         setUpXib()
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUpXib()
     }
@@ -89,11 +89,21 @@ class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         self.addSubview(view)
         
-        self.optionsTableView.register(UINib(nibName: "RNQuestionOptionCell", bundle: nil), forCellReuseIdentifier: "RNQuestionOptionCell")
+        let podBundle = Bundle(for: RNQuestionOptionCell.self)
+        
+        let bundleURL = podBundle.url(forResource: "Radio_CheckBox_Framework", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)!
+        
+        self.optionsTableView.register(UINib(nibName: "RNQuestionOptionCell", bundle: bundle), forCellReuseIdentifier: "RNQuestionOptionCell")
     }
     
     func loadViewFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
+        
+        let podBundle = Bundle(for: RNQuestionView.self)
+        
+        let bundleURL = podBundle.url(forResource: "Radio_CheckBox_Framework", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)!
+        
         let nib = UINib(nibName: "RNQuestionView", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         return view
