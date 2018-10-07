@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
