@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E43D92EC21672407003BAAD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D92EB21672407003BAAD5 /* AppDelegate.swift */; };
+		E43D92EE21672407003BAAD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D92ED21672407003BAAD5 /* ViewController.swift */; };
+		E43D92F121672407003BAAD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43D92EF21672407003BAAD5 /* Main.storyboard */; };
+		E43D92F321672408003BAAD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43D92F221672408003BAAD5 /* Assets.xcassets */; };
+		E43D92F621672408003BAAD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43D92F421672408003BAAD5 /* LaunchScreen.storyboard */; };
+		E43D92FE21672915003BAAD5 /* RNQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D92FD21672915003BAAD5 /* RNQuestionView.swift */; };
+		E43D930021672AB6003BAAD5 /* RNQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43D92FF21672AB6003BAAD5 /* RNQuestionView.xib */; };
+		E43D930321672D05003BAAD5 /* RNQuestionOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D930121672D05003BAAD5 /* RNQuestionOptionCell.swift */; };
+		E43D930421672D05003BAAD5 /* RNQuestionOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43D930221672D05003BAAD5 /* RNQuestionOptionCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E43D92E821672407003BAAD5 /* Survey Monkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Survey Monkey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43D92EB21672407003BAAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E43D92ED21672407003BAAD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E43D92F021672407003BAAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43D92F221672408003BAAD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43D92F521672408003BAAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E43D92F721672408003BAAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43D92FD21672915003BAAD5 /* RNQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNQuestionView.swift; sourceTree = "<group>"; };
+		E43D92FF21672AB6003BAAD5 /* RNQuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RNQuestionView.xib; sourceTree = "<group>"; };
+		E43D930121672D05003BAAD5 /* RNQuestionOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNQuestionOptionCell.swift; sourceTree = "<group>"; };
+		E43D930221672D05003BAAD5 /* RNQuestionOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RNQuestionOptionCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43D92E521672407003BAAD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E43D92DF21672407003BAAD5 = {
+			isa = PBXGroup;
+			children = (
+				E43D92EA21672407003BAAD5 /* Survey Monkey */,
+				E43D92E921672407003BAAD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E43D92E921672407003BAAD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43D92E821672407003BAAD5 /* Survey Monkey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43D92EA21672407003BAAD5 /* Survey Monkey */ = {
+			isa = PBXGroup;
+			children = (
+				E43D92EB21672407003BAAD5 /* AppDelegate.swift */,
+				E43D92ED21672407003BAAD5 /* ViewController.swift */,
+				E43D92FD21672915003BAAD5 /* RNQuestionView.swift */,
+				E43D92FF21672AB6003BAAD5 /* RNQuestionView.xib */,
+				E43D930121672D05003BAAD5 /* RNQuestionOptionCell.swift */,
+				E43D930221672D05003BAAD5 /* RNQuestionOptionCell.xib */,
+				E43D92EF21672407003BAAD5 /* Main.storyboard */,
+				E43D92F221672408003BAAD5 /* Assets.xcassets */,
+				E43D92F421672408003BAAD5 /* LaunchScreen.storyboard */,
+				E43D92F721672408003BAAD5 /* Info.plist */,
+			);
+			path = "Survey Monkey";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43D92E721672407003BAAD5 /* Survey Monkey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43D92FA21672408003BAAD5 /* Build configuration list for PBXNativeTarget "Survey Monkey" */;
+			buildPhases = (
+				E43D92E421672407003BAAD5 /* Sources */,
+				E43D92E521672407003BAAD5 /* Frameworks */,
+				E43D92E621672407003BAAD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Survey Monkey";
+			productName = "Survey Monkey";
+			productReference = E43D92E821672407003BAAD5 /* Survey Monkey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43D92E021672407003BAAD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Mayank Gupta";
+				TargetAttributes = {
+					E43D92E721672407003BAAD5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = E43D92E321672407003BAAD5 /* Build configuration list for PBXProject "Survey Monkey" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43D92DF21672407003BAAD5;
+			productRefGroup = E43D92E921672407003BAAD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43D92E721672407003BAAD5 /* Survey Monkey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43D92E621672407003BAAD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43D92F621672408003BAAD5 /* LaunchScreen.storyboard in Resources */,
+				E43D92F321672408003BAAD5 /* Assets.xcassets in Resources */,
+				E43D930021672AB6003BAAD5 /* RNQuestionView.xib in Resources */,
+				E43D930421672D05003BAAD5 /* RNQuestionOptionCell.xib in Resources */,
+				E43D92F121672407003BAAD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43D92E421672407003BAAD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43D92EE21672407003BAAD5 /* ViewController.swift in Sources */,
+				E43D92EC21672407003BAAD5 /* AppDelegate.swift in Sources */,
+				E43D930321672D05003BAAD5 /* RNQuestionOptionCell.swift in Sources */,
+				E43D92FE21672915003BAAD5 /* RNQuestionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E43D92EF21672407003BAAD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43D92F021672407003BAAD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43D92F421672408003BAAD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43D92F521672408003BAAD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43D92F821672408003BAAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E43D92F921672408003BAAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43D92FB21672408003BAAD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Survey Monkey/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frogcoders.Survey-Monkey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E43D92FC21672408003BAAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Survey Monkey/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frogcoders.Survey-Monkey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43D92E321672407003BAAD5 /* Build configuration list for PBXProject "Survey Monkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43D92F821672408003BAAD5 /* Debug */,
+				E43D92F921672408003BAAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43D92FA21672408003BAAD5 /* Build configuration list for PBXNativeTarget "Survey Monkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43D92FB21672408003BAAD5 /* Debug */,
+				E43D92FC21672408003BAAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43D92E021672407003BAAD5 /* Project object */;
+}

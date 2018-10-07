@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ufU-nO-9NE" customClass="RNQuestionOptionCell" customModule="Survey_Monkey" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufU-nO-9NE" id="hlq-r8-TBZ">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h6f-Bk-ia4">
+                        <rect key="frame" x="8" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GVg-Yf-MbF"/>
+                            <constraint firstAttribute="height" constant="20" id="b08-hb-GiF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ma-2t-jKX">
+                        <rect key="frame" x="44" y="12" width="288" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h6f-Bk-ia4" firstAttribute="centerY" secondItem="hlq-r8-TBZ" secondAttribute="centerY" id="BlJ-SD-dOh"/>
+                    <constraint firstItem="h6f-Bk-ia4" firstAttribute="leading" secondItem="hlq-r8-TBZ" secondAttribute="leading" constant="8" id="QQm-sp-zpP"/>
+                    <constraint firstAttribute="bottom" secondItem="8ma-2t-jKX" secondAttribute="bottom" constant="12" id="Z4Y-TO-iXO"/>
+                    <constraint firstItem="8ma-2t-jKX" firstAttribute="leading" secondItem="h6f-Bk-ia4" secondAttribute="trailing" constant="16" id="aUK-S2-9EN"/>
+                    <constraint firstAttribute="trailing" secondItem="8ma-2t-jKX" secondAttribute="trailing" constant="8" id="lNh-xI-kA5"/>
+                    <constraint firstItem="8ma-2t-jKX" firstAttribute="top" secondItem="hlq-r8-TBZ" secondAttribute="top" constant="12" id="pjf-Xu-5bH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="optionLabel" destination="8ma-2t-jKX" id="xQ5-On-rBj"/>
+                <outlet property="optionSelectionControlImage" destination="h6f-Bk-ia4" id="B6O-Z8-3Y1"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
