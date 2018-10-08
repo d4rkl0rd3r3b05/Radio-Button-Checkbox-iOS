@@ -8,17 +8,17 @@
 
 import UIKit
 
-enum RNQUestionType: Int {
+public enum RNQUestionType: Int {
     case singleChoice = 1
     case multipleChoice = 2
 }
 
-class RNQuestion {
+open class RNQuestion {
     fileprivate var question: String
     fileprivate var options: [RNOption]
     fileprivate var type: RNQUestionType
     
-    init?(question: String, options: [String], type: RNQUestionType) {
+    public init?(question: String, options: [String], type: RNQUestionType) {
         if question.trimmingCharacters(in: .whitespacesAndNewlines) == "" || options.count == 0 {
             return nil
         }
@@ -54,30 +54,36 @@ class IntrinsicTableView: UITableView {
     
 }
 
-protocol QuestionSubmissionDelegate: NSObjectProtocol {
+public protocol QuestionSubmissionDelegate: NSObjectProtocol {
     func onSubmission(response: [[Int]])
 }
 
-class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
+open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var optionsTableView: IntrinsicTableView!
     @IBOutlet weak var nextButton: UIButton!
     
-    var questions: [RNQuestion]?
+    public var questions: [RNQuestion]?
     var currentQuestionIndex = 0
     var currentQuestionType: RNQUestionType = .singleChoice
     weak var delegate: QuestionSubmissionDelegate?
     
-    override init(frame: CGRect) {
+    private var cellNib: UINib? {
+        didSet {
+            self.optionsTableView.register(cellNib, forCellReuseIdentifier: "RNQuestionOptionCell")
+        }
+    }
+    
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setUpXib()
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUpXib()
     }
@@ -89,11 +95,21 @@ class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         self.addSubview(view)
         
-        self.optionsTableView.register(UINib(nibName: "RNQuestionOptionCell", bundle: nil), forCellReuseIdentifier: "RNQuestionOptionCell")
+        let podBundle = Bundle(for: RNQuestionOptionCell.self)
+        
+        let bundleURL = podBundle.url(forResource: "RadioAndCheckboxBundle", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)!
+        
+        self.cellNib = UINib(nibName: "RNQuestionOptionCell", bundle: bundle)
     }
     
     func loadViewFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
+        
+        let podBundle = Bundle(for: RNQuestionView.self)
+        
+        let bundleURL = podBundle.url(forResource: "RadioAndCheckboxBundle", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)!
+        
         let nib = UINib(nibName: "RNQuestionView", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         return view
@@ -101,11 +117,11 @@ class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
 
     
     // MARK: - Table view data source
-    func numberOfSections(in tableView: UITableView) -> Int {
+    private func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let currentQuestion = self.questions?[currentQuestionIndex] {
             //Calculated once for every question to avoid over calculation
             self.currentQuestionType = currentQuestion.type
@@ -125,14 +141,14 @@ class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         return 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RNQuestionOptionCell", for: indexPath) as! RNQuestionOptionCell
         cell.setData(option: self.questions![currentQuestionIndex].options[indexPath.row])
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.questions![currentQuestionIndex].options[indexPath.row].isSelected = true
         
 //        if currentQuestionType == .singleChoice {

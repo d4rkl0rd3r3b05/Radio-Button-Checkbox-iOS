@@ -16,11 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        questionView.questions = [ RNQuestion(question: "What is your name?", options: ["Mayank", "Reetika", "Neha", "Jai"], type: .singleChoice),
+        let questions = [ RNQuestion(question: "What is your name?", options: ["Mayank", "Reetika", "Neha", "Jai"], type: .singleChoice),
                                    RNQuestion(question: "What is your age?", options: ["30", "28", "22", "19", "17"], type: .singleChoice),
                                    RNQuestion(question: "What are your hobbies?", options: ["Programming", "Books", "Movies", "Travelling"], type: .multipleChoice)
             
-            ] as! [RNQuestion]
+            ] as? [RNQuestion]
+        
+        questionView.questions = questions
         
         addAccessibility()
     }

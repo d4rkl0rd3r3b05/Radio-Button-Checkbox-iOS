@@ -26,7 +26,7 @@ class RNQuestionOptionCell: UITableViewCell {
 
         // Configure the view for the selected state
         self.associatedOption?.isSelected = selected
-        self.optionSelectionControlImage.image = selected ? UIImage(named: "selectedIcon") : UIImage(named: "unselectedIcon")
+        self.optionSelectionControlImage.image = selected ? UIImage(named: "selectedIcon.png") : UIImage(named: "unselectedIcon.png")
         addAccessibility(currentOption: self.associatedOption!)
     }
     

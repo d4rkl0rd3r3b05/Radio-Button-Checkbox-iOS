@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAAB718A91E1DEA6E4999C2C /* Pods_Survey_Monkey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B710A0239A7AE95DA01677 /* Pods_Survey_Monkey.framework */; };
 		E43D92EC21672407003BAAD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D92EB21672407003BAAD5 /* AppDelegate.swift */; };
 		E43D92EE21672407003BAAD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D92ED21672407003BAAD5 /* ViewController.swift */; };
 		E43D92F121672407003BAAD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43D92EF21672407003BAAD5 /* Main.storyboard */; };
 		E43D92F321672408003BAAD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43D92F221672408003BAAD5 /* Assets.xcassets */; };
 		E43D92F621672408003BAAD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43D92F421672408003BAAD5 /* LaunchScreen.storyboard */; };
-		E43D92FE21672915003BAAD5 /* RNQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D92FD21672915003BAAD5 /* RNQuestionView.swift */; };
-		E43D930021672AB6003BAAD5 /* RNQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43D92FF21672AB6003BAAD5 /* RNQuestionView.xib */; };
-		E43D930321672D05003BAAD5 /* RNQuestionOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D930121672D05003BAAD5 /* RNQuestionOptionCell.swift */; };
-		E43D930421672D05003BAAD5 /* RNQuestionOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43D930221672D05003BAAD5 /* RNQuestionOptionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38B710A0239A7AE95DA01677 /* Pods_Survey_Monkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey_Monkey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB68707585BDDDA8DAE1F04 /* Pods-Survey Monkey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey Monkey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Survey Monkey/Pods-Survey Monkey.debug.xcconfig"; sourceTree = "<group>"; };
+		56A1109A98CFAF296F88FF56 /* Pods-Survey Monkey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey Monkey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Survey Monkey/Pods-Survey Monkey.release.xcconfig"; sourceTree = "<group>"; };
 		E43D92E821672407003BAAD5 /* Survey Monkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Survey Monkey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43D92EB21672407003BAAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E43D92ED21672407003BAAD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,10 +26,7 @@
 		E43D92F221672408003BAAD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E43D92F521672408003BAAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E43D92F721672408003BAAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E43D92FD21672915003BAAD5 /* RNQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNQuestionView.swift; sourceTree = "<group>"; };
-		E43D92FF21672AB6003BAAD5 /* RNQuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RNQuestionView.xib; sourceTree = "<group>"; };
-		E43D930121672D05003BAAD5 /* RNQuestionOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNQuestionOptionCell.swift; sourceTree = "<group>"; };
-		E43D930221672D05003BAAD5 /* RNQuestionOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RNQuestionOptionCell.xib; sourceTree = "<group>"; };
+		E4FB2173216A62AD0021D50F /* SurveyMonkey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SurveyMonkey-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAB718A91E1DEA6E4999C2C /* Pods_Survey_Monkey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2649869AE7AA18433D86BA2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EB68707585BDDDA8DAE1F04 /* Pods-Survey Monkey.debug.xcconfig */,
+				56A1109A98CFAF296F88FF56 /* Pods-Survey Monkey.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E43D92DF21672407003BAAD5 = {
 			isa = PBXGroup;
 			children = (
 				E43D92EA21672407003BAAD5 /* Survey Monkey */,
 				E43D92E921672407003BAAD5 /* Products */,
+				2649869AE7AA18433D86BA2A /* Pods */,
+				EB7153AE05F4FB99FC872FDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,18 +71,23 @@
 		E43D92EA21672407003BAAD5 /* Survey Monkey */ = {
 			isa = PBXGroup;
 			children = (
+				E4FB2173216A62AD0021D50F /* SurveyMonkey-Bridging-Header.h */,
 				E43D92EB21672407003BAAD5 /* AppDelegate.swift */,
 				E43D92ED21672407003BAAD5 /* ViewController.swift */,
-				E43D92FD21672915003BAAD5 /* RNQuestionView.swift */,
-				E43D92FF21672AB6003BAAD5 /* RNQuestionView.xib */,
-				E43D930121672D05003BAAD5 /* RNQuestionOptionCell.swift */,
-				E43D930221672D05003BAAD5 /* RNQuestionOptionCell.xib */,
 				E43D92EF21672407003BAAD5 /* Main.storyboard */,
 				E43D92F221672408003BAAD5 /* Assets.xcassets */,
 				E43D92F421672408003BAAD5 /* LaunchScreen.storyboard */,
 				E43D92F721672408003BAAD5 /* Info.plist */,
 			);
 			path = "Survey Monkey";
+			sourceTree = "<group>";
+		};
+		EB7153AE05F4FB99FC872FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B710A0239A7AE95DA01677 /* Pods_Survey_Monkey.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E43D92FA21672408003BAAD5 /* Build configuration list for PBXNativeTarget "Survey Monkey" */;
 			buildPhases = (
+				4CE665D4CA14277911E07232 /* [CP] Check Pods Manifest.lock */,
 				E43D92E421672407003BAAD5 /* Sources */,
 				E43D92E521672407003BAAD5 /* Frameworks */,
 				E43D92E621672407003BAAD5 /* Resources */,
+				B4E02A3AD7EB8B9D0AF4F8F5 /* [CP] Embed Pods Frameworks */,
+				71564134FC3C5E45E08B25A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,13 +153,65 @@
 			files = (
 				E43D92F621672408003BAAD5 /* LaunchScreen.storyboard in Resources */,
 				E43D92F321672408003BAAD5 /* Assets.xcassets in Resources */,
-				E43D930021672AB6003BAAD5 /* RNQuestionView.xib in Resources */,
-				E43D930421672D05003BAAD5 /* RNQuestionOptionCell.xib in Resources */,
 				E43D92F121672407003BAAD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CE665D4CA14277911E07232 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Survey Monkey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71564134FC3C5E45E08B25A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Survey Monkey/Pods-Survey Monkey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E02A3AD7EB8B9D0AF4F8F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Survey Monkey/Pods-Survey Monkey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Radio_and_Checkbox/Radio_and_Checkbox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Radio_and_Checkbox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Survey Monkey/Pods-Survey Monkey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E43D92E421672407003BAAD5 /* Sources */ = {
@@ -151,8 +220,6 @@
 			files = (
 				E43D92EE21672407003BAAD5 /* ViewController.swift in Sources */,
 				E43D92EC21672407003BAAD5 /* AppDelegate.swift in Sources */,
-				E43D930321672D05003BAAD5 /* RNQuestionOptionCell.swift in Sources */,
-				E43D92FE21672915003BAAD5 /* RNQuestionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,17 +363,16 @@
 		};
 		E43D92FB21672408003BAAD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB68707585BDDDA8DAE1F04 /* Pods-Survey Monkey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Survey Monkey/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.frogcoders.Survey-Monkey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Survey Monkey/SurveyMonkey-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,17 +380,16 @@
 		};
 		E43D92FC21672408003BAAD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A1109A98CFAF296F88FF56 /* Pods-Survey Monkey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Survey Monkey/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.frogcoders.Survey-Monkey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Survey Monkey/SurveyMonkey-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
