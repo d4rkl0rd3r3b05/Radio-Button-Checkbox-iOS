@@ -91,7 +91,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         
         let podBundle = Bundle(for: RNQuestionOptionCell.self)
         
-        let bundleURL = podBundle.url(forResource: "Radio_CheckBox_Framework", withExtension: "bundle")
+        let bundleURL = podBundle.url(forResource: "RadioAndCheckboxBundle", withExtension: "bundle")
         let bundle = Bundle(url: bundleURL!)!
         
         self.optionsTableView.register(UINib(nibName: "RNQuestionOptionCell", bundle: bundle), forCellReuseIdentifier: "RNQuestionOptionCell")
@@ -101,7 +101,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         
         let podBundle = Bundle(for: RNQuestionView.self)
         
-        let bundleURL = podBundle.url(forResource: "Radio_CheckBox_Framework", withExtension: "bundle")
+        let bundleURL = podBundle.url(forResource: "RadioAndCheckboxBundle", withExtension: "bundle")
         let bundle = Bundle(url: bundleURL!)!
         
         let nib = UINib(nibName: "RNQuestionView", bundle: bundle)

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Radio_and_Checkbox"
-  s.version      = "0.0.1"
+  s.version      = "0.0.5"
   s.summary      = "Radio Button & Checkbox for iOS implemented as per the HIG."
 
   # This description is used to generate tags and improve search results.
@@ -108,7 +108,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   s.resources = "Resources/*.png"
   s.resource_bundles = {
-    'Radio_CheckBox_Framework' => ['Classes/*.{xib}']
+    'RadioAndCheckboxBundle' => ['Classes/*.{xib}']
   }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
