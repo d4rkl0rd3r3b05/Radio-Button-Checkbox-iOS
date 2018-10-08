@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Radio_and_Checkbox"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "Radio Button & Checkbox for iOS implemented as per the HIG."
 
   # This description is used to generate tags and improve search results.
