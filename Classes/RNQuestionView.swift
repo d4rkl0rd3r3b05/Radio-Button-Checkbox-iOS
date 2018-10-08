@@ -68,6 +68,12 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
     var currentQuestionType: RNQUestionType = .singleChoice
     weak var delegate: QuestionSubmissionDelegate?
     
+    private var cellNib: UINib? {
+        didSet {
+            self.optionsTableView.register(cellNib, forCellReuseIdentifier: "RNQuestionOptionCell")
+        }
+    }
+    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setUpXib()
@@ -94,7 +100,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         let bundleURL = podBundle.url(forResource: "RadioAndCheckboxBundle", withExtension: "bundle")
         let bundle = Bundle(url: bundleURL!)!
         
-        self.optionsTableView.register(UINib(nibName: "RNQuestionOptionCell", bundle: bundle), forCellReuseIdentifier: "RNQuestionOptionCell")
+        self.cellNib = UINib(nibName: "RNQuestionOptionCell", bundle: bundle)
     }
     
     func loadViewFromNib() -> UIView {
@@ -111,7 +117,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
 
     
     // MARK: - Table view data source
-    func numberOfSections(in tableView: UITableView) -> Int {
+    private func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
@@ -142,7 +148,7 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.questions![currentQuestionIndex].options[indexPath.row].isSelected = true
         
 //        if currentQuestionType == .singleChoice {
