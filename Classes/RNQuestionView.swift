@@ -148,9 +148,9 @@ open class RNQuestionView: UIView, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.questions![currentQuestionIndex].options[indexPath.row].isSelected = true
-        
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        addAccessibilityForNextButton()
+
 //        if currentQuestionType == .singleChoice {
 //            self.nextButtonAction(nil)
 //        }
@@ -181,6 +181,20 @@ extension RNQuestionView {
         self.questionLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         if #available(iOS 10.0, *) {
             self.questionLabel.adjustsFontForContentSizeCategory = true
+        }
+        
+        //Next Button
+        addAccessibilityForNextButton()
+    }
+    
+    //Next Button
+    func addAccessibilityForNextButton() {
+        if self.questions![currentQuestionIndex].options.filter({return $0.isSelected}).count <= 0 {
+            self.nextButton.accessibilityLabel = "Please answer the question to proceed to next"
+            self.nextButton.accessibilityTraits = UIAccessibilityTraitNotEnabled
+        } else {
+            self.nextButton.accessibilityLabel = "Proceed to next question"
+            self.nextButton.accessibilityTraits = UIAccessibilityTraitButton
         }
     }
 }

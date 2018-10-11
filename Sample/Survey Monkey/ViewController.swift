@@ -23,8 +23,6 @@ class ViewController: UIViewController {
             ] as? [RNQuestion]
         
         questionView.questions = questions
-        
-        addAccessibility()
     }
 }
 
