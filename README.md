@@ -1,6 +1,10 @@
 # Radio-Button-Checkbox-iOS
 Radio Button &amp; Checkbox for iOS implemented in accordance to HIG and WCAG2.1
 
+<p align="center">
+  <img src="https://thumbs.gfycat.com/ViciousUnluckyCuckoo-size_restricted.gif" width="320" height="480" />
+</p>
+
 You want to add pod 'Radio_and_Checkbox' similar to the following to your Podfile:
 
 ```
