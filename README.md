@@ -17,7 +17,7 @@ Radio Button &amp; Checkbox for iOS implemented in accordance to HIG and WCAG2.1
 </table>
 
 #### Voice Over
-[![Voice Over Support](https://i.imgur.com/iHtgGnWl.png)](https://www.youtube.com/embed/MpxU6r5skQw "Voice Over Support - Click to Watch!")
+[![Voice Over Support](https://i.imgur.com/iHtgGnWl.png?1)](https://www.youtube.com/embed/MpxU6r5skQw "Voice Over Support - Click to Watch!")
 
 
 You want to add pod 'Radio_and_Checkbox' similar to the following to your Podfile:
