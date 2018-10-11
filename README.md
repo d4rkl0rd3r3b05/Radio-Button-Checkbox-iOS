@@ -16,3 +16,5 @@ Alternatively to give it a test run, run the command:
 ```
 pod try Radio_and_Checkbox
 ```
+
+This dependency provide accessibility support using Voice Over, Dynamic Text, Smart Invert, Colour Filters, Baseline Anchor and Zoom.
