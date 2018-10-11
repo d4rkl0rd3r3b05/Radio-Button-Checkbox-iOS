@@ -1,5 +1,5 @@
 # Radio-Button-Checkbox-iOS
-Radio Button &amp; Checkbox for iOS implemented in accordance to HIG
+Radio Button &amp; Checkbox for iOS implemented in accordance to HIG and WCAG2.1
 
 You want to add pod 'Radio_and_Checkbox' similar to the following to your Podfile:
 
