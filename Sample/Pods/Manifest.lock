@@ -1,11 +1,11 @@
 PODS:
-  - Radio_and_Checkbox (0.0.7)
+  - Radio_and_Checkbox (0.0.8)
 
 DEPENDENCIES:
   - Radio_and_Checkbox
 
 SPEC CHECKSUMS:
-  Radio_and_Checkbox: 7c7c194dad916e3093851573fe92120120720dee
+  Radio_and_Checkbox: c5cb9fb5778af36e2a8aedfbdc269ecc68621bbb
 
 PODFILE CHECKSUM: 0953e0c923390f11c6a2902370ec26714276e260
 
